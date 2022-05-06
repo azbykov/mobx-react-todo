@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {createContext} from 'react';
 import ReactDOM from 'react-dom/client';
+import DevTools from 'mobx-react-devtools';
 import './index.css';
-import App from './App';
+import {App} from './components/app';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -9,6 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    {/*<DevTools />*/}
     <App />
   </React.StrictMode>
 );
